@@ -1,14 +1,9 @@
 import React, { useEffect, useState } from "react";
 
 // Types
-type PlanetId = "summary" | "experience" | "skills" | "education" | "fun";
+// Types (JS version)
+const planetIds = ["summary", "experience", "skills", "education", "fun"];
 
-interface Planet {
-  id: PlanetId;
-  label: string;
-  description: string;
-  size: number;
-}
 
 const planets: Planet[] = [
   { id: "summary",    label: "Mission Briefing",  description: "Summary",             size: 140 },
